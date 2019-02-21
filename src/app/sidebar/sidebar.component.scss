@@ -1,0 +1,50 @@
+@import '../app.component.scss';
+
+.c-sidebar{
+    height: 100vh;
+    width: $sidebar-width;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $color-neutral-xx-light;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: $primary-font-stack;
+}
+
+.c-sidebar__content{
+    margin-left: $gutter;
+}
+.c-sidebar__header{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-alpha-dark;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.c-sidebar__countries{
+    display: flex;
+    flex-direction: column;
+}
+.c-sidebar__countries a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 7px 0 7px 0;
+    color: $color-neutral-xxx-dark;
+    cursor: pointer;
+}
+
+.c-sidebar__visted{
+    margin-top: 25px;
+    position: fixed;
+}
+
+a{
+    width: 75%;
+}
+
+a.selected {
+    background-color: $color-neutral-dark;
+}

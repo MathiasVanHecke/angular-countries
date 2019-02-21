@@ -1,0 +1,12 @@
+<div class="c-sidebar">
+  <div class="c-sidebar__content">
+    <h1 class="c-sidebar__header">Select a region</h1>
+    
+    <div class="c-sidebar__countries">
+      <a *ngFor= "let continent of continents"
+      (click)= "onSelect(continent)"
+      [class.selected] = "continent === selectedContinent">{{ continent }}</a>
+    </div>
+    <p class="c-sidebar__visted"> You have visted TODO countries</p>
+  </div>
+</div>
