@@ -1,0 +1,33 @@
+@import '../app.component.scss';
+
+.c-countries{
+    height: 100vh;
+    margin-left: $gutter;
+}
+
+.c-countries__header{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.c-countries__table{
+    margin-bottom: $gutter;
+}
+
+.c-countries__table th{
+    font-weight: bold;
+}
+
+.c-countries__table tr td img{
+    max-height: 20px;
+    max-width: 30px;
+    margin: 5px;
+}
+
+tr:nth-child(even) {background: #CCC}
+
+tr{
+    height: 25px;
+}

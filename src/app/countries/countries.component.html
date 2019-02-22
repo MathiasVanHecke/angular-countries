@@ -1,0 +1,24 @@
+<div class="main">
+  <div class="c-countries">
+    <h1 class="">{{ continent }}</h1>
+    <table class="c-countries__table">
+      <tr>
+        <th>Visted</th>
+        <th>Flag</th>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Currency</th>
+      </tr>
+      <tr *ngFor="let country of countries">
+        <td>
+          <input type="checkbox" checked>
+        </td>
+        <td>
+          <img src="{{ country.flag }}" alt="vlag">
+        </td>
+        <td>{{country.name}}</td>
+        <td>{{country.capital}}</td>
+        <td>{{country.currencies[0].symbol}}</td>
+      </tr>
+    </table>
+  </div>

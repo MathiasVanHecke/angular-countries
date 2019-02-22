@@ -3,7 +3,6 @@
 }
 
 
-
 // SETTINGS
 // COLORS
 $color-alpha-xx-light: #caf6ff;
@@ -38,3 +37,9 @@ $gutter: 24px;
 // ANIMATIONS
 $speed: 200ms;
 $easing: ease-out;
+
+.main{
+    height: 100vh;
+    margin-left: $sidebar-width;
+    font-family: $primary-font-stack;
+}

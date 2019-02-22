@@ -5,7 +5,8 @@
     <div class="c-sidebar__countries">
       <a *ngFor= "let continent of continents"
       (click)= "onSelect(continent)"
-      [class.selected] = "continent === selectedContinent">{{ continent }}</a>
+      [class.selected] = "continent === selectedContinent"
+      [routerLink]="['/countries', continent]">{{ continent }}</a>
     </div>
     <p class="c-sidebar__visted"> You have visted TODO countries</p>
   </div>
